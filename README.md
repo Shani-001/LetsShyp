@@ -1,66 +1,72 @@
-
 # 📦 Lets Shyp — Package Delivery & Booking App
 
 Live Demo: https://lets-shyp-nu.vercel.app/
 
-Lets Shyp is a **full-stack Next.js package delivery booking interface** that lets users create delivery requests by entering pickup & drop addresses, choose service options, and place orders with mock payment flows — ideal for demos, prototypes, or logistics UI systems.
+Lets Shyp is a **frontend-focused Next.js package delivery booking application** that allows users to create delivery requests by entering pickup & drop locations, selecting package/vehicle options, reviewing pricing, and completing a **mocked payment flow**.  
+The project is designed for **UI/UX demonstration, system design clarity, and frontend architecture practice**.
 
 ---
 
 ## 🚀 Features
 
 ✔ Multi-step booking flow  
-✔ Pickup & Drop address form  
-✔ Optional delivery instructions  
-✔ Package / vehicle selection  
-✔ Price summary & fare breakdown  
-✔ Mocked payment options  
-✔ Booking confirmation UI  
-✔ Retains state when editing previous steps
+✔ Pickup & Drop address inputs  
+✔ Optional delivery instructions / notes  
+✔ Package weight & vehicle selection  
+✔ Pricing summary with fare breakdown  
+✔ Mocked payment methods (UPI, Card, COD)  
+✔ Payment confirmation & booking reference  
+✔ Ability to edit previous steps while retaining state  
 
 ---
-
 
 ## 🧠 How It Works
 
 1. **Pickup & Drop Details**  
-   Fill pickup & drop addresses with optional instructions.  
+   User enters pickup and drop addresses with optional delivery instructions.
+
 2. **Package / Vehicle Selection**  
-   Choose vehicle type and enter package weight details.  
-3. **Pricing & Summary**  
-   See base fare, distance fare, add-ons, and totals.  
-4. **Checkout / Payment Mock**  
-   Select a payment method (UPI / Card / COD) and place booking.  
-5. **Confirmation Screen**  
-   Booking reference generated + next steps.
+   User selects a suitable vehicle based on package weight constraints.
+
+3. **Pricing & Order Summary**  
+   Fare is calculated using mocked base fare + distance + add-ons.
+
+4. **Checkout / Payment (Mocked)**  
+   User selects a payment method and places the booking.
+
+5. **Booking Confirmation**  
+   A success screen with a generated booking reference (e.g. `LS-XXXXXX`) is shown.
 
 ---
 
 ## 🛠️ Tech Stack
 
 | Technology | Purpose |
-|------------|---------|
-| Next.js | React framework |
+|-----------|---------|
+| Next.js (App Router) | Application framework |
+| React | UI & state management |
 | Tailwind CSS | Styling |
-| React & Hooks | State & UI |
 | Vercel | Deployment |
 
 ---
 
-## 🧑‍💻 Installation (Local)
+## 🧑‍💻 Setup & Installation
+
+### Prerequisites
+- Node.js v18 or higher
+- npm or yarn
+
+### Steps
 
 ```bash
-# Clone the repo
-git clone https://github.com/Shani-001/lets-shyp.git
+# Clone the repository
+git clone https://github.com/Shani-001/LetsShyp.git
 
-# Change directory
+# Navigate to project folder
 cd LetsShyp
 
 # Install dependencies
 npm install
 
-# Run in development mode
+# Start development server
 npm run dev
-
-# Build for production
-npm run build
