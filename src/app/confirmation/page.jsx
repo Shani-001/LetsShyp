@@ -26,7 +26,7 @@ export default function PaymentConfirmationPage() {
           Your booking has been confirmed successfully.
         </p>
 
-        {/* Payment Details */}
+
         <div className="bg-gray-100 rounded-xl p-4 text-sm space-y-2">
           <DetailRow label="Booking ID" value={bookingRef} />
           <DetailRow label="Amount Paid" value={`₹${user.price}`} />
@@ -34,7 +34,7 @@ export default function PaymentConfirmationPage() {
           <DetailRow label="Status" value={user.paymentMethod == "Cash" ? "pending" : "completed"} />
         </div>
 
-        {/* CTA */}
+    
         <div className="space-y-3">
           <button className="w-full py-3 rounded-xl bg-black text-white font-semibold">
             Track Booking
